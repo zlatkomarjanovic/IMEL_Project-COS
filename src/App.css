@@ -26,3 +26,36 @@
     
 }
 
+.overlapping_container {
+  width: 90%;
+  max-width: 470px;
+  margin: 50px auto;
+  display:inline-block;
+  align-items: center;
+  justify-content: center;
+  
+   
+}
+
+.class1 {
+  padding: 10px;  
+}
+
+.sale_img_1 {
+  
+  width: 450px; 
+  height: 450px; 
+  object-fit: cover;
+  z-index: 1;
+}
+
+.sale_img_2 {
+  width: 250px; 
+  height: 300px; 
+  object-fit: cover;
+  float: right;
+  top: -60px;
+  position:relative;
+  z-index: 2;
+  
+}
