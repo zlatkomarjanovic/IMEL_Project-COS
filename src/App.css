@@ -13,3 +13,16 @@
     font-size: 3.5rem;
     margin-top: 10%;
   }
+
+  .footer {
+    margin-top: 20px;
+    bottom:0;
+    height:70px;
+    width:100%;
+    background-color: white;
+    color: #D2D6D4;
+    text-align: center;
+    padding: 10px;
+    
+}
+

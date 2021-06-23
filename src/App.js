@@ -8,7 +8,7 @@ import Sale from './components/Pages/Sale'
 import Contact from './components/Pages/Contact' 
 import Signin from './components/Pages/Signin' 
 import Cart from './components/Pages/Cart' 
-
+import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <Fragment>
@@ -26,7 +26,10 @@ const App = () => {
         
       </Switch>
       </Router>
-    </Fragment>
+
+
+      <Footer />
+    </Fragment>     
   )
 }
 
