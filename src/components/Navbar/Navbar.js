@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import './Navbar.css'
 import {NavLink} from "react-router-dom"
+import Logo from '../Logo/Logo'
 
 const Navbar = () => {
     return (
@@ -24,11 +25,12 @@ const Navbar = () => {
                               Sale
                           </NavLink>
                          </li>
-                     </ul>
-                        <NavLink exact to = "/" className="nav-logo">
-                             COS
+                    
+                        <li>
+                        <NavLink exact to = "/" className="nav-links">
+                             <Logo /> 
                          </NavLink>
-                     <ul className = "nav-menu">
+                         </li>
                          
                         <li>
                         <NavLink exact to = "/contact" className="nav-links">
