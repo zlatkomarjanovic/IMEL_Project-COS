@@ -111,3 +111,22 @@
 
 /*Women Page CSS*/
 
+.woman_item_image {
+  width: 350px; 
+  height: 500px; 
+  object-fit: cover;
+}
+
+.div_container {
+  padding: 25px;
+  display: inline-block;
+  
+}
+
+.div_container_all {
+  text-align: center;
+}
+
+.div_container_all h2 {
+  padding: 10px; 
+}
