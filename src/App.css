@@ -22,31 +22,44 @@
     background-color: white;
     color: #D2D6D4;
     text-align: center;
-    padding: 10px;
+    
     
 }
 
+/*Sales page CSS*/
+
 .overlapping_container {
-  width: 90%;
-  max-width: 470px;
-  margin: 50px auto;
+  width: 100%;
+  text-align: center;
+  margin: auto;
   display:inline-block;
   align-items: center;
   justify-content: center;
-  
+  vertical-align: middle;
    
 }
 
 .class1 {
-  padding: 10px;  
+  padding: 25px;  
+  display: inline-block;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.class2 {
+  margin-top: 50px;
+  padding: 25px;  
+  display: inline-block;
+  align-items: center;
 }
 
 .sale_img_1 {
-  
-  width: 450px; 
-  height: 450px; 
+  display:block;
+  width: 400px; 
+  height: 400px; 
   object-fit: cover;
   z-index: 1;
+  
 }
 
 .sale_img_2 {
@@ -57,5 +70,44 @@
   top: -60px;
   position:relative;
   z-index: 2;
+  display: block;
+  
   
 }
+
+
+.sale_img_3 {
+  width: 250px; 
+  height: 300px; 
+  object-fit: cover;
+  float: left;
+  top: -60px;
+  position:relative;
+  z-index: 2;
+  display: block;
+  
+  
+}
+
+.coats {
+  
+}
+
+.coat_men {
+  width:500px; 
+  height:250px;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+
+.coat_women {
+  width:500px; 
+  height:250px;
+  object-fit: cover;
+  margin-left: -300px;
+  margin-top: 50px;
+}
+
+
+/*Women Page CSS*/
+
