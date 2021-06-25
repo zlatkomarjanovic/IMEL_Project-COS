@@ -10,7 +10,7 @@ const Contact = () => {
             <input type="text" className="form-control" name="Name and Surname" placeholder="Your Name and Surname" required="" autofocus="" />   <br/>  
             <input type="text" className="form-control" name="Subject" placeholder="Subject" required="" autofocus="" />   <br/> 
             <textarea className = "form_control_textarea" placeholder="Enter your message..." name="w3review" rows="4" cols="50">
-               
+               asdasdasdsad
             </textarea>
             
             <button className="button" type="submit">Send</button>   
