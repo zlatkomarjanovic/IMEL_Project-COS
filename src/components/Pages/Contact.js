@@ -3,29 +3,22 @@ import React from 'react'
 const Contact = () => {
     return (
         <div>
-            <div className = "container_contact">
-            <div action="action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
-                <label for="country">Country</label>
-                 <select id="country" name="country">
-                     <option value="australia">Australia</option>
-                     <option value="canada">Canada</option>
-                     <option value="usa">USA</option>
-                 </select>
-                 <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-
-                    <input type="submit" value="Submit"></input>
-
-            </div>
-
+        <div className="wrapper">
+        <div className="form-signin">       
+         <h2 className="form-signin-heading">Feel free to contact us</h2>
+            <input type="text" className="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
+            <input type="text" className="form-control" name="Name and Surname" placeholder="Your Name and Surname" required="" autofocus="" />   <br/>  
+            <input type="text" className="form-control" name="Subject" placeholder="Subject" required="" autofocus="" />   <br/> 
+            <textarea className = "form_control_textarea" placeholder="Enter your message..." name="w3review" rows="4" cols="50">
+               
+            </textarea>
+            
+            <button className="button" type="submit">Send</button>   
+        </div>
+     </div>
 
             
-        </div>
-        </div>
+    </div>
     )
 }
 
