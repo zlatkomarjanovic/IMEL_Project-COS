@@ -28,18 +28,18 @@ const ItemDetails = (props) => {
                   <h4 style = {{marginRight: 25}}>You might also like:</h4>
                     <YouMightLike 
                         price = "14.99$"
-                        title = "New Autumn Men Clothes Slim Fit"
-                        imgurl = "https://ae01.alicdn.com/kf/HTB1z1HvmFkoBKNjSZFEq6zrEVXat/New-Autumn-Fashion-Brand-Men-Clothes-Slim-Fit-Men-Long-Sleeve-Shirt-Men-Plaid-Cotton-Casual.jpg_Q90.jpg_.webp"
+                        title = "Casual Summer Outfit"
+                        imgurl = "https://i.pinimg.com/originals/93/dc/90/93dc90acbaecb7c23c2da7b078226ddf.jpg"
                     /> 
                     <YouMightLike 
-                        title = "Fashion Men Clothes"
+                        title = "Fancy Dress"
                         price = "14.99$"
-                        imgurl = "https://sc04.alicdn.com/kf/HTB1KWcjeDTI8KJjSsphq6AFppXao.jpg"
+                        imgurl = "https://cdn.shopify.com/s/files/1/2059/2623/products/ICHOIX-women-clothes-2018-fashion-autumn-winter-dress-sexy-party-dress-elegant-tube-long-sleeve-ladies_74172ea0-d43f-48a2-86c7-836d6119cfb4_800x.jpg?v=1539375263"
                     /> 
                     <YouMightLike 
-                        title = "Casual Fall Outfits"
+                        title = "Spring Outfit"
                         price = "14.99$"
-                        imgurl = "https://i.pinimg.com/originals/84/48/af/8448af80944eaca909874361f6009221.png"
+                        imgurl = "https://i.pinimg.com/736x/fc/a6/54/fca6549c9f74373ae03d9df78c8317a2.jpg"
                     />
                     
             </div>

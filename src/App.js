@@ -7,7 +7,7 @@ import Women from './components/Pages/Women/Women'
 import Sale from './components/Pages/Sale' 
 import Contact from './components/Pages/Contact' 
 import Signin from './components/Pages/Signin' 
-import Cart from './components/Pages/Cart' 
+import Cart from './components/Pages/Cart/Cart' 
 import Footer from './components/Footer/Footer'
 const App = () => {
   return (
