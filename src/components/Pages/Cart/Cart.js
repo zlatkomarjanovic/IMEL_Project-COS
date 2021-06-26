@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Cart = () => {
+const Cart = ({price, title, image}) => {
     return (
         <div>
-            Cart
+            <img alt = {title} src = {image} /> 
+            <h1>{title}</h1>
+            <p>{price}</p>
+
         </div>
     )
 }

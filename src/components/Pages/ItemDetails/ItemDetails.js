@@ -1,16 +1,27 @@
-import React, {Fragment} from 'react'
-import DisplayItem from '../DisplayItem/DisplayItem';
+import React, {Fragment, useState, useEffect} from 'react'
 import YouMightLike from './YouMightLike'
+import Cart from '../Cart/Cart';
+import { Link } from 'react-router-dom';
 
 const ItemDetails = (props) => {
     
     const {id, title, price, imgurl, desc, viewItemInfo} = props.currentItem; 
+
+    const [cart, setCart] = useState([]); 
+    
+
+    const addToCart = (product) => {
+        console.log('Added'); 
+        setCart([...cart, product])
+    }
+    
+
     return (
         <Fragment>
             <div className = "goback" onClick = {props.closeItemInfo}>
                  <i className = "fa fa-arrow-left"> </i>
                  <span style = {{marginLeft: 10}}> Go Back </span>
-                </div>
+            </div>
             <div className = "img_details_container">
                 
               <img alt = {title} className = "item_image" src = {imgurl} />
@@ -20,7 +31,14 @@ const ItemDetails = (props) => {
               </div>
               
               <p className = "p_width" >{desc}</p>
-              <button className = "add_to_cart">Add to Cart</button>
+              <Link to = '/cart'>
+                <button 
+                    onClick = {() => addToCart(props.currentItem)}
+                    className = "add_to_cart">
+                        Add to Cart
+                </button>
+               </Link>
+
               <p> Product number : {id}</p>
             </div>
             
