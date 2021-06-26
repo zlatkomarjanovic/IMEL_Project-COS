@@ -228,6 +228,12 @@ input[type=submit]:hover {
     border-radius: 10px;
     margin: 10px;
     font-weight: bold;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    width: 70%;
+    transition: 0.5s;
   }
 
 	input[type="text"] {

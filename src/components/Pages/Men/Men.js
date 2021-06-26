@@ -1,5 +1,6 @@
-import React from 'react'
+import React , {useEffect, useState, Fragment} from 'react'
 import DisplayItem from '../DisplayItem/DisplayItem'
+import ItemDetails from '../ItemDetails/ItemDetails'
 
 
 const products = [
@@ -24,20 +25,45 @@ const products = [
 
 
 const Women = () => {
-    return (
-        <div className = "div_container_all">
-            <h2>Men</h2>
-            {
-                products.map((product) =>(
-                    <DisplayItem 
-                        id={product.id} 
-                        imgurl = {product.imgurl} 
-                        title = {product.title}
-                        price = {product.price}
-                        /> 
-                ))
-            }
-        </div>
+
+    
+    const [currentItem, setCurrentItem] = useState(null); 
+
+
+    const viewItemInfo = (id) => {
+        const filteredItem = products.filter(product => product.id === id)
+        const newCurrentItem = filteredItem.length > 0 ? filteredItem[0] : null
+        setCurrentItem(newCurrentItem)
+    }
+
+    const closeItemInfo = () => {
+        setCurrentItem(null); 
+    }
+
+    return (<Fragment>
+            {currentItem === null ? <div className = "div_container_all">
+                <h2>Men</h2>
+                {
+                    products.map((product) =>(
+                        <DisplayItem  
+                            imgurl = {product.imgurl} 
+                            title = {product.title}
+                            price = {product.price}
+                            viewItemInfo = {viewItemInfo}
+                            key = {product.id}
+                            {...product}
+                            /> 
+                    ))
+                }
+            </div>
+            : 
+
+            <ItemDetails 
+                currentItem = {currentItem}
+                closeItemInfo = {closeItemInfo}
+            
+            /> }
+        </Fragment>
     )
 }
 
