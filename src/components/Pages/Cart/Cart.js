@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import { useCart } from 'react-use-cart'
-
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const { 
@@ -55,7 +55,11 @@ const Cart = () => {
             })}
             
             <h2>Total Price : $ {cartTotal}</h2>
-            
+            <Link to = "/checkout">
+            <button className = "button_blue">
+                    Checkout
+                </button>
+            </Link>
             
         </div>
     )

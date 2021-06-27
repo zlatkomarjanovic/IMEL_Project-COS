@@ -8,6 +8,9 @@
   
   body {
     background-color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
   .pages {
@@ -18,13 +21,14 @@
   }
 
   .footer {
-    margin-top: 20px;
+    margin-top: auto;
     bottom:0;
     height:80px;
     width:100%;
     background-color: white;
     color: #D2D6D4;
     text-align: center;
+    
     
     
 }
@@ -228,22 +232,9 @@ input[type=submit]:hover {
 		
 	}
   
-  .button {
-    width: 60%;
-    padding: 10px;
-    border: none;
-    color: white;
-    background-color: #316685;
-    border-radius: 10px;
-    margin: 10px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+ 
 
-  .button:hover {
-    width: 70%;
-    transition: 0.5s;
-  }
+  
 
 	input[type="text"] {
 	  margin-bottom: -1px;
@@ -257,17 +248,6 @@ input[type=submit]:hover {
 	  border-top-right-radius: 0;
 	}
 
-  .goback {
-    cursor: pointer;
-    background-color: #595959; 
-    padding: 15px;
-    color: whitesmoke;
-    border: none;
-    width: 250px;  
-    font-size: 15px;
-    margin: 10px;
-    
-  }
 
 .img_details{
   width: 30%;
@@ -346,6 +326,28 @@ input[type=submit]:hover {
   width: 250px;  
   font-size: 15px;
 }
+.button_blue {
+  cursor: pointer;
+  background-color: #236f9b; 
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 250px;  
+  font-size: 15px;
+}
+
+
+.button {
+  cursor: pointer;
+  background-color: #595959; 
+  padding: 15px;
+  color: whitesmoke;
+  border: none;
+  width: 250px;  
+  font-size: 15px;
+  margin: 10px;
+  
+}
 
 .gallery {
   width: 80px;
@@ -368,3 +370,60 @@ input[type=submit]:hover {
   border-radius: 200px;
   
 }
+
+.outer_checkout_container {
+  display: flex;
+  
+}
+
+.checkout_container {
+  background: whitesmoke;
+  min-height: 100vh;
+  width: 60%;
+  text-align: center;
+  
+}
+
+.checkout_container1 {
+  padding: 30px;
+  background: white;
+  min-height: 100vh;
+  width: 40%;
+  
+}
+
+.checkout_img {
+  padding: 10px;
+  height: 100px;
+  width: 100px; 
+  object-fit: cover;
+  display: flex;
+  float: left;
+}
+
+.active {
+  color: black;
+}
+
+.form_signin_checkout {
+  max-width: 500px;
+  padding: 80px;
+  margin: 0 auto;
+  
+  
+}
+
+.name_and_surname {
+  display: flex;
+  margin: 0;
+}
+
+.f_name {
+  
+  
+  width: 45%;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+

@@ -10,7 +10,7 @@ import Signin from './components/Pages/Signin'
 import Cart from './components/Pages/Cart/Cart' 
 import Footer from './components/Footer/Footer'
 import { CartProvider } from 'react-use-cart'
-
+import Checkout from './components/Pages/Checkout/Checkout'
 
 
 const App = () => {
@@ -28,6 +28,7 @@ const App = () => {
           <Route path = "/contact" component={Contact}/>
           <Route path = "/signin" component={Signin}/>
           <Route path = "/cart" component={Cart}/>
+          <Route path = "/checkout" component = {Checkout} /> 
         </CartProvider>
       </Switch>
       </Router>

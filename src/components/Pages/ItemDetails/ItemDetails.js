@@ -12,7 +12,7 @@ const ItemDetails = (props) => {
 
     return (
         <Fragment>
-            <div className = "goback" onClick = {props.closeItemInfo}>
+            <div className = "button" onClick = {props.closeItemInfo}>
                  <i className = "fa fa-arrow-left"> </i>
                  <span style = {{marginLeft: 10}}> Go Back </span>
             </div>
