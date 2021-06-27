@@ -11,6 +11,8 @@ const Confirm = ({mail, name, surname, adress, payment, company, city, zipcode})
         totalItems, 
     } = useCart();
 
+   
+
     return (
         <Fragment>
             <div className = "outer_checkout_container"> 
@@ -29,17 +31,18 @@ const Confirm = ({mail, name, surname, adress, payment, company, city, zipcode})
                 <div style = {{margin: 20, float: 'left'}}> 
                     <h2>Confirm</h2>
                     <h3>
-                        Contact : {mail}
+                        Contact : {mail} example@mail.com
                     </h3>
                     <h3 style = {{fontWeight: 'bold'}}>
-                        {name}{surname}
+                        {name}{surname} John Doe
                     </h3>
-                    <h3>{adress}</h3>
-                    <h3>Payment method : {payment}</h3>
-                    <h3>{company}</h3>
-                    <h3> {city} {zipcode}</h3>
+                    <h3>{adress} Zlatka Ivaniševića 16 </h3>
+                    <h3>Payment method : {payment} Paypal </h3>
+                    <h3>{company} Company </h3>
+                    <h3> {city} {zipcode} Zivinice 75270 </h3>
                     <Link to = "/thanks">
-                    <button className = "button"> Continue to Confirm </button> 
+                     <button 
+                        className = "button"> Continue to Confirm </button> 
                     </Link>
                 </div>
                 
