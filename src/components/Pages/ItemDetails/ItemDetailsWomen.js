@@ -1,10 +1,12 @@
 import React, {Fragment} from 'react'
-import DisplayItem from '../DisplayItem/DisplayItem';
 import YouMightLike from './YouMightLike'
+import { useCart } from 'react-use-cart';
 
 const ItemDetails = (props) => {
     
-    const {id, title, price, imgurl, desc, viewItemInfo} = props.currentItem; 
+    const {id, title, price, imgurl, desc} = props.currentItem; 
+    const { addItem } = useCart(); 
+
     return (
         <Fragment>
             <div className = "goback" onClick = {props.closeItemInfo}>
@@ -20,7 +22,11 @@ const ItemDetails = (props) => {
               </div>
               
               <p className = "p_width" >{desc}</p>
-              <button className = "add_to_cart">Add to Cart</button>
+              <button 
+                    onClick={() => addItem(props.currentItem)}
+                    className = "add_to_cart">
+                        Add to Cart
+                </button>
               <p> Product number : {id}</p>
             </div>
             

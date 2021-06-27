@@ -1,12 +1,10 @@
-import React, {Fragment, useState, useEffect} from 'react'
+import React, {Fragment} from 'react'
 import YouMightLike from './YouMightLike'
-import Cart from '../Cart/Cart';
-import { Link } from 'react-router-dom';
 import { useCart } from 'react-use-cart';
 
 const ItemDetails = (props) => {
     
-    const {id, title, price, imgurl, desc, viewItemInfo, addedtocart} = props.currentItem; 
+    const {id, title, price, imgurl, desc} = props.currentItem; 
     const { addItem } = useCart(); 
     
 
@@ -35,9 +33,6 @@ const ItemDetails = (props) => {
 
               <p> Product number : {id}</p>
             </div>
-
-            
-            
             <div className = "">
                   <h4 style = {{marginRight: 25}}>You might also like:</h4>
                     <YouMightLike 
