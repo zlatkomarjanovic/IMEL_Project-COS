@@ -6,13 +6,9 @@ import { Link } from 'react-router-dom';
 const Checkout = () => {
     const { 
         cartTotal,
-        isEmpty, 
         totalUniqueItems,
         items,
         totalItems, 
-        updateItemQuantity, 
-        removeItem, 
-        emptyCart
     } = useCart();
 
     return (
@@ -33,10 +29,11 @@ const Checkout = () => {
 
                 <div className="wrapper">
                  <div className="form_signin_checkout">       
-                     <h2 className="form-signin-heading">Contact Information</h2>
+                     <h2 style = {{float: 'left'}} className="form-signin-heading">Contact Information</h2>
                      <input type="text"  name="email" placeholder="Email Address" required="" autofocus="" />
 
-                     <h2 className="form-signin-heading">Shipping adress</h2>
+                     <h2 style = {{float: 'left'}} className="form-signin-heading">Shipping adress</h2> <br /> < br/> 
+
                      <div className = "name_and_surname">
                         <input type="text" className="f_name" name="First Name" placeholder="First Name" required="" autofocus="" />    
                         <input type="text" className="f_name" name="Last Name" placeholder="Last Name" required="" autofocus="" />
@@ -50,7 +47,9 @@ const Checkout = () => {
                     </div>
                      <input type="text"  name="Country/Region" placeholder="Country/Region" required="" autofocus="" />
                      <input type="text"  name="Phone (optional)" placeholder="Phone (optional)" required="" autofocus="" />
-                    <button className="button" type="submit">Continue to Payment</button>   
+                     <Link to = '/payment'>
+                         <button style = {{float: 'right'}} className="button" type="submit">Continue to Payment</button>   
+                     </Link>
              </div>
           </div>
 
@@ -66,9 +65,9 @@ const Checkout = () => {
                 
                 <div className = "cart_container_data"> 
                     <h2>{item.title}</h2>
-                    <h3>$ {item.price}</h3>
-                    <p> Quantity of this item : {item.quantity} </p> 
-                    <br/> <br/> <br/>
+                    <h3>$ {item.price} x {item.quantity}</h3>
+                    
+                    <br/> <br/> <br/> <br/> <br/>
                 </div>
                 
              

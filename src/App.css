@@ -420,10 +420,26 @@ input[type=submit]:hover {
 
 .f_name {
   
-  
-  width: 45%;
+  width: 500px; 
+  margin-left: -5px;
   border: 1px solid #D9D9D9;
   box-sizing: border-box;
   border-radius: 3px;
+}
+
+.form_signin_checkout input {
+  margin: 7px;
+  
+  
+}
+.payment_logo {
+  display: flex;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px;
+  float: left;
+  
 }
 
