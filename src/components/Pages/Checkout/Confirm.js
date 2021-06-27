@@ -3,16 +3,12 @@ import Logo from '../../Logo/Logo'
 import { useCart } from 'react-use-cart'
 import { Link } from 'react-router-dom';
 
-const Checkout = () => {
+const Confirm = ({mail, name, surname, adress, payment, company, city, zipcode}) => {
     const { 
         cartTotal,
-        isEmpty, 
         totalUniqueItems,
         items,
         totalItems, 
-        updateItemQuantity, 
-        removeItem, 
-        emptyCart
     } = useCart();
 
     return (
@@ -26,45 +22,27 @@ const Checkout = () => {
                 
                 <p style = {{textAlign: 'center', color:'gray', margin: 10}}> 
                     Information
-                    <i class="fa fa-angle-right"></i> <span className = "active"> Payment </span> 
-                    <i class="fa fa-angle-right"></i> Confirm
+                    <i class="fa fa-angle-right"></i>  Payment 
+                    <i class="fa fa-angle-right"></i> <span className = "active"> Confirm </span>
                 </p>
                 
-
-                <h2>Payment provider</h2>
-                <div> 
-                    <img 
-                        className = "payment_logo"
-                        alt = "Paypal Logo" 
-                        value = "Paypal" 
-                        src = "https://cdn.dribbble.com/users/2367833/screenshots/11919536/pay_pal_medium_quality_dribbble__4x.png"/> 
-                </div>
-                <div> 
-                    <img 
-                        className = "payment_logo"
-                        alt = "Stripe Logo" 
-                        value = "Stripe" 
-                        src = "https://stripe.com/img/v3/newsroom/social.png"/> 
-
-                </div>
-                <div> 
-                    <img 
-                        className = "payment_logo"
-                        alt = "Apple Pay Logo" 
-                        value = "Apple Pay" 
-                        src = "https://i.pcmag.com/imagery/reviews/02RJy7OTtPnQQjh37yQDNqx-15..1598973550.png"/> 
-                </div>
-                <div> 
-                <img 
-                        className = "payment_logo"
-                        alt = "Klarna" 
-                        value = "Klarna" 
-                        src = "https://www.klarna.com/assets/sites/3/2019/12/05105033/blog-logo.png"/>
-                    
-                </div>
-                 <Link to = "/confirm">
+                <div style = {{margin: 20, float: 'left'}}> 
+                    <h2>Confirm</h2>
+                    <h3>
+                        Contact : {mail}
+                    </h3>
+                    <h3 style = {{fontWeight: 'bold'}}>
+                        {name}{surname}
+                    </h3>
+                    <h3>{adress}</h3>
+                    <h3>Payment method : {payment}</h3>
+                    <h3>{company}</h3>
+                    <h3> {city} {zipcode}</h3>
+                    <Link to = "/thanks">
                     <button className = "button"> Continue to Confirm </button> 
-                 </Link>
+                    </Link>
+                </div>
+                
                 
              </div>
              
@@ -103,4 +81,4 @@ const Checkout = () => {
     )
 }
 
-export default Checkout
+export default Confirm

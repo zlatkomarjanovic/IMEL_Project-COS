@@ -12,7 +12,8 @@ import Footer from './components/Footer/Footer'
 import { CartProvider } from 'react-use-cart'
 import Checkout from './components/Pages/Checkout/Checkout'
 import Payment from './components/Pages/Checkout/Payment'
-
+import Confirm from './components/Pages/Checkout/Confirm'
+import Thanks from './components/Pages/Checkout/Thanks'
 
 const App = () => {
   return (
@@ -31,6 +32,8 @@ const App = () => {
           <Route path = "/cart" component={Cart}/>
           <Route path = "/checkout" component = {Checkout} /> 
           <Route path = "/payment" component = {Payment} /> 
+          <Route path = "/confirm" component = {Confirm} />
+          <Route path = "/thanks" component = {Thanks} />
         </CartProvider>
       </Switch>
       </Router>

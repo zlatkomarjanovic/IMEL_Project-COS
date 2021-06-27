@@ -24,47 +24,17 @@ const Checkout = () => {
 
                 
                 
-                <p style = {{textAlign: 'center', color:'gray', margin: 10}}> 
+                <p style = {{color:'gray', margin: 10}}> 
                     Information
-                    <i class="fa fa-angle-right"></i> <span className = "active"> Payment </span> 
-                    <i class="fa fa-angle-right"></i> Confirm
+                    <i class="fa fa-angle-right"></i>Payment 
+                    <i class="fa fa-angle-right"></i><span className = "active"> Confirm</span> 
                 </p>
                 
 
-                <h2>Payment provider</h2>
-                <div> 
-                    <img 
-                        className = "payment_logo"
-                        alt = "Paypal Logo" 
-                        value = "Paypal" 
-                        src = "https://cdn.dribbble.com/users/2367833/screenshots/11919536/pay_pal_medium_quality_dribbble__4x.png"/> 
-                </div>
-                <div> 
-                    <img 
-                        className = "payment_logo"
-                        alt = "Stripe Logo" 
-                        value = "Stripe" 
-                        src = "https://stripe.com/img/v3/newsroom/social.png"/> 
-
-                </div>
-                <div> 
-                    <img 
-                        className = "payment_logo"
-                        alt = "Apple Pay Logo" 
-                        value = "Apple Pay" 
-                        src = "https://i.pcmag.com/imagery/reviews/02RJy7OTtPnQQjh37yQDNqx-15..1598973550.png"/> 
-                </div>
-                <div> 
-                <img 
-                        className = "payment_logo"
-                        alt = "Klarna" 
-                        value = "Klarna" 
-                        src = "https://www.klarna.com/assets/sites/3/2019/12/05105033/blog-logo.png"/>
-                    
-                </div>
-                 <Link to = "/confirm">
-                    <button className = "button"> Continue to Confirm </button> 
-                 </Link>
+                <h2 style = {{float: 'left', margin: 10}}>Thank you for your order ! </h2>
+                <h3 style = {{float: 'left', margin: 10}}>The order will be processed within the next 48 hours</h3>
+                
+                 
                 
              </div>
              
