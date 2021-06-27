@@ -1,6 +1,8 @@
 import React, {Fragment} from 'react'
 import YouMightLike from './YouMightLike'
 import { useCart } from 'react-use-cart';
+import Gallery from './Gallery';
+
 
 const ItemDetails = (props) => {
     
@@ -31,10 +33,13 @@ const ItemDetails = (props) => {
                 </button>
                
 
-              <p> Product number : {id}</p>
+              <p> Product number : {id}</p> <br /> 
+               
+              
             </div>
+            <Gallery imgurl = "https://thumbs.dreamstime.com/z/vector-cartoon-long-sleeve-blue-classic-men-shirt-light-131998675.jpg"/>
             <div className = "">
-                  <h4 style = {{marginRight: 25}}>You might also like:</h4>
+                  <h3 style = {{marginLeft: 25}}>You might also like:</h3>
                     <YouMightLike 
                         price = "14.99$"
                         title = "New Autumn Men Clothes Slim Fit"
