@@ -2,18 +2,12 @@ import React, {Fragment, useState, useEffect} from 'react'
 import YouMightLike from './YouMightLike'
 import Cart from '../Cart/Cart';
 import { Link } from 'react-router-dom';
+import { useCart } from 'react-use-cart';
 
 const ItemDetails = (props) => {
     
-    const {id, title, price, imgurl, desc, viewItemInfo} = props.currentItem; 
-
-    const [cart, setCart] = useState([]); 
-    
-
-    const addToCart = (product) => {
-        console.log('Added'); 
-        setCart([...cart, product])
-    }
+    const {id, title, price, imgurl, desc, viewItemInfo, addedtocart} = props.currentItem; 
+    const { addItem } = useCart(); 
     
 
     return (
@@ -31,16 +25,18 @@ const ItemDetails = (props) => {
               </div>
               
               <p className = "p_width" >{desc}</p>
-              <Link to = '/cart'>
+              
                 <button 
-                    onClick = {() => addToCart(props.currentItem)}
+                    onClick={() => addItem(props.currentItem)}
                     className = "add_to_cart">
                         Add to Cart
                 </button>
-               </Link>
+               
 
               <p> Product number : {id}</p>
             </div>
+
+            
             
             <div className = "">
                   <h4 style = {{marginRight: 25}}>You might also like:</h4>

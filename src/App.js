@@ -9,6 +9,10 @@ import Contact from './components/Pages/Contact'
 import Signin from './components/Pages/Signin' 
 import Cart from './components/Pages/Cart/Cart' 
 import Footer from './components/Footer/Footer'
+import { CartProvider } from 'react-use-cart'
+
+
+
 const App = () => {
   return (
     <Fragment>
@@ -16,14 +20,15 @@ const App = () => {
         <Navbar />
        
       <Switch>
-        <Route exact path = "/" component={Sale}/>
-        <Route path = "/sale" component={Sale}/>
-        <Route path = "/men" component={Men}/>
-        <Route path = "/women" component={Women}/>
-        <Route path = "/contact" component={Contact}/>
-        <Route path = "/signin" component={Signin}/>
-        <Route path = "/cart" component={Cart}/>
-        
+        <CartProvider>
+          <Route exact path = "/" component={Sale}/>
+          <Route path = "/sale" component={Sale}/>
+          <Route path = "/men" component={Men}/>
+          <Route path = "/women" component={Women}/>
+          <Route path = "/contact" component={Contact}/>
+          <Route path = "/signin" component={Signin}/>
+          <Route path = "/cart" component={Cart}/>
+        </CartProvider>
       </Switch>
       </Router>
 
