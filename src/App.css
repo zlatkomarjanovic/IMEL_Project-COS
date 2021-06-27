@@ -359,3 +359,12 @@ input[type=submit]:hover {
   margin-top: -20px;
   margin-bottom: 35px;
 }
+
+.cart_items {
+  font-size: small;
+  padding: 5px; 
+  background-color: #595959;
+  color: whitesmoke;
+  border-radius: 200px;
+  
+}

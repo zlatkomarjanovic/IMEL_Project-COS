@@ -2,8 +2,13 @@ import React, { Fragment } from 'react'
 import './Navbar.css'
 import {NavLink} from "react-router-dom"
 import Logo from '../Logo/Logo'
+import { useCart } from 'react-use-cart'
 
 const Navbar = () => {
+    const { 
+        totalUniqueItems,
+        totalItems
+    } = useCart(); 
     return (
         <Fragment>
             <nav className = "navbar">
@@ -44,7 +49,7 @@ const Navbar = () => {
                         </li>
                         <li>
                         <NavLink exact to = "/cart" className="nav-links">
-                             Cart
+                         <span className = "cart_items">{totalUniqueItems}</span> Cart
                          </NavLink>
                         </li>
                     </ul>

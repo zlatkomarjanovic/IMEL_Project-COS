@@ -17,13 +17,13 @@ const Cart = () => {
     if(isEmpty) return(
         <div>
             <h2>
-                >our Cart is Empty
+                Your Cart is Empty
             </h2>
         </div>
     )
     return (
         <div className = "outer_container">
-            <h5>Total Unique Items : ({totalUniqueItems}) <br/> Total Items : ({totalItems})</h5>
+            <h5>Total Unique Items : {totalUniqueItems} <br/> Total Items : {totalItems}</h5>
             <button onClick = {() => emptyCart()}> </button>
             {items.map((item, index) => { return(
                 <Fragment>
