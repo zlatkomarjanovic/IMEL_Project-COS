@@ -133,10 +133,12 @@
   display: inline-block;
   cursor: pointer;
   position:flex;
+  
 }
 
-.div_container:nth-child(2) {
-  margin-top: 20px;
+.div_container:nth-child(2n) {
+  
+  margin-top: 10px;
 }
 
 .div_container_all {
