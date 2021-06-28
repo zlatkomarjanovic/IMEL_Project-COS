@@ -129,25 +129,30 @@
 }
 
 .div_container {
-  padding: 25px;
+  padding: 10px;
   display: inline-block;
   cursor: pointer;
-  position:flex;
+  position:relative;
+  margin: auto; 
   
 }
 
-.div_container:nth-child(2n) {
-  
-  margin-top: 10px;
-}
 
 .div_container_all {
   text-align: center;
+  display: inline-block;
+  position: relative;
 }
 
 .div_container_all h2 {
   padding: 10px; 
 }
+
+
+
+
+
+
 
 
 /*Contact*/
