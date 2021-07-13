@@ -6,7 +6,7 @@ const DisplayItem = ({title, imgurl, price, id, viewItemInfo}) => {
             
             <img className = "woman_item_image" src = {imgurl} /> 
             <h3 className = "" >{title}</h3>
-            <p className = "">{price}</p>
+            <p className = ""> €{price}</p>
         </div>
     )
 }

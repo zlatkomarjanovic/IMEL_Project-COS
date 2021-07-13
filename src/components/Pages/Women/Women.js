@@ -39,9 +39,9 @@ const Women = () => {
     }
 
 
-    return (<Fragment>
+    return (<Fragment> <h2>Women</h2>
         {currentItem === null ? <div className = "div_container_all">
-            <h2>Women</h2>
+            
             {
                 products.map((product) =>(
                     <DisplayItem  
