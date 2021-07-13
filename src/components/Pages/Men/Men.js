@@ -40,8 +40,8 @@ const Men = () => {
         setCurrentItem(null); 
     }
 
-    return (<Fragment className = "grid_container">
-            <h2 style = {{marginTop: 20}}>Men</h2>
+    return (<Fragment>
+            <h2 style = {{marginTop: 20, textAlign: 'center'}}>Men</h2>
             {currentItem === null ? <div className = "div_container_all"> 
                 {
                     products.map((product) =>(

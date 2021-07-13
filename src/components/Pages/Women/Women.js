@@ -39,7 +39,7 @@ const Women = () => {
     }
 
 
-    return (<Fragment> <h2>Women</h2>
+    return (<Fragment> <h2 style = {{marginTop: 20, textAlign: 'center'}}>Women</h2>
         {currentItem === null ? <div className = "div_container_all">
             
             {

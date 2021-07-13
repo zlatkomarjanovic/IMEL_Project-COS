@@ -40,13 +40,18 @@
   text-align: center;
   margin: auto;
   display:grid;
-  
-   
+  grid-template-columns: repeat(2 1fr);
+  grid-gap:10em ;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 .class1 {
   padding: 25px;  
   display: inline-block;
+  position: relative;
 }
 
 
@@ -55,6 +60,8 @@
   offset: 50px 10px; 
   padding: 25px;  
   display: inline-block;
+  position: relative;
+  
 }
 
 .sale_img_1 {
@@ -427,11 +434,13 @@ input[type=submit]:hover {
 
 
 .div_container {
-  padding: 10px;
+  padding: 50px;
   display: inline-block;
   cursor: pointer;
   position:relative;  
+  
 }
+
 .div_container:nth-child(2n+1) {
   offset-position:relative ;
   margin-top: -100px;
@@ -442,11 +451,18 @@ input[type=submit]:hover {
   margin-top: 100px;
   text-align: center;
   display: grid;
-  position: relative;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin: auto;
+  margin-top: 100px;
+  grid-gap:7px;
+  width: 90%;
+  
   
 }
 
 .div_container_all h2 {
   padding: 10px; 
 }
+
+
+
