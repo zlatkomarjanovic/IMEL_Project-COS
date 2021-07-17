@@ -11,7 +11,62 @@ const Navbar = () => {
     } = useCart(); 
     return (
         <Fragment>
-            <nav className = "navbar">
+
+            <div className="nav">
+                <input type="checkbox" id="nav-check"></input>
+                
+                <div className="nav-btn">
+                    <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </label>
+                </div>
+                
+                <div className="nav_links_1">
+
+                    
+                         <NavLink exact to = "/women" className="nav-links">
+                              Women
+                          </NavLink>
+                         
+                         
+                         <NavLink exact to = "/men" className="nav-links">
+                              Men
+                          </NavLink>
+                        
+                         <NavLink exact to = "/sale" className="nav-links">
+                              Sale
+                          </NavLink>
+                    
+                        <NavLink exact to = "/" className="nav-links">
+                             <Logo /> 
+                         </NavLink>
+                         
+                        <NavLink exact to = "/contact" className="nav-links">
+                             Contact
+                         </NavLink>
+                        
+                        <NavLink exact to = "/signin" className="nav-links">
+                             Sign In
+                         </NavLink>
+                        
+                        <NavLink exact to = "/cart" className="nav-links">
+                         <span className = "cart_items">{totalUniqueItems}</span> Cart
+                         </NavLink>
+                        </div>
+                
+            </div>
+
+
+
+
+
+
+
+
+
+            {/*<nav className = "navbar">
                 <div className = "nav-container">
                 <ul className = "nav-menu">
                          
@@ -55,7 +110,8 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-            </nav>
+            </nav>*/}
+        
         </Fragment>
     )
 }
