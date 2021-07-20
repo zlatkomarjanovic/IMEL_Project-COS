@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Logo from "../../Logo/Logo";
 import { useCart } from "react-use-cart";
 import { Link } from "react-router-dom";
+import Checkout from "./Checkout";
 
 const Confirm = ({
 	mail,

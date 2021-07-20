@@ -3,7 +3,7 @@ import Logo from "../../Logo/Logo";
 import { useCart } from "react-use-cart";
 import { Link } from "react-router-dom";
 
-const Checkout = () => {
+const Checkout = ({ name }) => {
 	const {
 		cartTotal,
 		isEmpty,

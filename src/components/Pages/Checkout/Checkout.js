@@ -151,12 +151,14 @@ const Checkout = () => {
 								value={phone}
 								onChange={(e) => setPhone(e.target.value)}
 							/>
-							<input
-								style={{ float: "right" }}
-								className='button'
-								type='submit'
-								value='Continue to payment'
-							/>
+							<Link to='/payment'>
+								<input
+									style={{ float: "right" }}
+									className='button'
+									type='submit'
+									value='Continue to payment'
+								/>
+							</Link>
 						</form>
 					</div>
 				</div>
