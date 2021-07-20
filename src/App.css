@@ -1,468 +1,435 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-  }
-  
-  body {
-    background-color: whitesmoke;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .pages {
-    color: #316685;
-    text-align: center;
-    font-size: 3.5rem;
-    margin-top: 10%;
-  }
+	margin: 0;
+	padding: 0;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+}
 
-  .footer {
-    margin-top: auto;
-    bottom:0;
-    height:80px;
-    width:100%;
-    background-color: white;
-    color: #D2D6D4;
-    text-align: center;
-    
-    
-    
+body {
+	background-color: whitesmoke;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.pages {
+	color: #316685;
+	text-align: center;
+	font-size: 3.5rem;
+	margin-top: 10%;
+}
+
+.footer {
+	margin-top: auto;
+	bottom: 0;
+	height: 80px;
+	width: 100%;
+	background-color: white;
+	color: #d2d6d4;
+	text-align: center;
 }
 
 /*Sales page CSS*/
 
 .overlapping_container {
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  display:grid;
-  grid-template-columns: repeat(2 1fr);
-  grid-gap:10em ;
-  align-items: center;
-  justify-content: center;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2 1fr);
+	grid-gap: 10em;
+	align-items: center;
+	justify-content: center;
 }
-
-
 
 .class1 {
-  padding: 25px;  
-  display: inline-block;
-  position: relative;
+	padding: 25px;
+	display: inline-block;
+	position: relative;
 }
 
-
-
 .class2 {
-  offset: 50px 10px; 
-  padding: 25px;  
-  display: inline-block;
-  position: relative;
-  
+	offset: 50px 10px;
+	padding: 25px;
+	display: inline-block;
+	position: relative;
 }
 
 .sale_img_1 {
-  display:block;
-  width: 400px; 
-  height: 400px; 
-  object-fit: cover;
-  z-index: 1;
-  
+	display: block;
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+	z-index: 1;
 }
 
 .sale_img_2 {
-  width: 250px; 
-  height: 300px; 
-  object-fit: cover;
-  float: right;
-  top: -60px;
-  position:relative;
-  z-index: 2;
-  display: block;
-  
-  
+	width: 250px;
+	height: 300px;
+	object-fit: cover;
+	float: right;
+	top: -60px;
+	position: relative;
+	z-index: 2;
+	display: block;
 }
-
 
 .sale_img_3 {
-  width: 250px; 
-  height: 300px; 
-  object-fit: cover;
-  float: left;
-  top: -60px;
-  position:relative;
-  z-index: 2;
-  display: block;
-  
-  
+	width: 250px;
+	height: 300px;
+	object-fit: cover;
+	float: left;
+	top: -60px;
+	position: relative;
+	z-index: 2;
+	display: block;
 }
 
-
-
 .coat_men {
-  width:500px; 
-  height:250px;
-  margin-bottom: 50px;
-  object-fit: cover;
+	width: 500px;
+	height: 250px;
+	margin-bottom: 50px;
+	object-fit: cover;
 }
 
 .coat_women {
-  width:500px; 
-  height:250px;
-  object-fit: cover;
-  margin-left: -300px;
-  margin-top: 50px;
+	width: 500px;
+	height: 250px;
+	object-fit: cover;
+	margin-left: -300px;
+	margin-top: 50px;
 }
-
 
 /*Women Page CSS*/
 
 .woman_item_image {
-  width: 350px; 
-  height: 500px; 
-  object-fit: cover;
+	width: 20rem;
+	height: 35rem;
+	object-fit: cover;
 }
 
-
-
-
-
-
-
-
-
-
 /*Contact*/
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type="text"],
+select,
+textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+input[type="submit"] {
+	background-color: #04aa6d;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+input[type="submit"]:hover {
+	background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
 .container_contact {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
-  display: flex;
-  text-align: center;
-  margin-bottom: 25rem;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	width: 50%;
+	display: flex;
+	text-align: center;
+	margin-bottom: 25rem;
 }
-
 
 /*SIGN IN*/
 
-
-.wrapper {	
+.wrapper {
+	margin: auto;
 	margin-top: 80px;
-  margin-bottom: 80px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+	margin-bottom: 80px;
+	width: 90%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .form-signin {
-  max-width: 400px;
-  padding: 80px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);   }
+	max-width: 400px;
+	padding: 80px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
-  
+.checkbox {
+	font-weight: normal;
+}
 
-	.checkbox {
-	  font-weight: normal;
-	}
+.form-control {
+	position: relative;
+	font-size: 16px;
+	padding: 10px;
+	margin: 10px;
+	width: 100%;
+}
 
-	.form-control {
-	  position: relative;
-	  font-size: 16px;
-	  padding: 10px;
-    margin: 10px;
-    width: 100%;
-		
-		
-	}
+.form_control_textarea {
+	position: relative;
+	font-size: 16px;
+	padding: 10px;
+	margin: 10px;
+	width: 100%;
+	height: 250px;
+}
 
-  .form_control_textarea {
-	  position: relative;
-	  font-size: 16px;
-	  padding: 10px;
-    margin: 10px;
-    width: 100%;
-    height: 250px;
-		
-		
-	}
-  
- 
+input[type="text"] {
+	margin-bottom: -1px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
 
-  
+input[type="password"] {
+	margin-bottom: 20px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
 
-	input[type="text"] {
-	  margin-bottom: -1px;
-	  border-bottom-left-radius: 0;
-	  border-bottom-right-radius: 0;
-	}
-
-	input[type="password"] {
-	  margin-bottom: 20px;
-	  border-top-left-radius: 0;
-	  border-top-right-radius: 0;
-	}
-
-
-.img_details{
-  width: 30%;
-  
+.img_details {
+	width: 30%;
 }
 
 .img_details_container {
-  padding: 40px;
-  display: inline-block;
-  margin-top: 10px;
+	padding: 40px;
+	display: inline-block;
+	margin-top: 10px;
 }
 
 .item_image {
-  width: 350px; 
-  height: 500px; 
-  object-fit: cover;
-  display: flex;
-  float: left;
-  margin-right: 30px;
-  
+	width: 350px;
+	height: 500px;
+	object-fit: cover;
+	display: flex;
+	float: left;
+	margin-right: 30px;
 }
 
 .p_width {
-  width: 850px;
-  margin-bottom: 50px;
+	width: 850px;
+	margin-bottom: 50px;
 }
 
 .add_to_cart {
-  cursor: pointer;
-  background-color: #595959; 
-  padding: 15px;
-  color: whitesmoke;
-  border: none;
-  width: 250px;  
-  font-size: 15px;
+	cursor: pointer;
+	background-color: #595959;
+	padding: 15px;
+	color: whitesmoke;
+	border: none;
+	width: 250px;
+	font-size: 15px;
 }
 
 .color_orange {
-  color:orangered; 
+	color: orangered;
 }
 
 .cart_container {
-  padding: 50px; 
-  display: inline-block;
-  width: 80%;
-  border: 1px solid black;
-  margin: 5px; 
+	padding: 50px;
+	display: inline-block;
+	width: 80%;
+	border: 1px solid black;
+	margin: 5px;
 }
 
 .cart_container img {
-  float: left;
-  padding-right: 25px ;
+	float: left;
+	padding-right: 25px;
 }
 
 .cart_container button {
-  margin: 10px;
-  padding: 10px; 
-  border: none; 
-  cursor: pointer;
-  
+	margin: 10px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
 }
-.cart_container_data{
-  
+.cart_container_data {
 }
 
 .outer_container {
-  padding: 25px;
+	padding: 25px;
 }
 
 .button_red {
-  cursor: pointer;
-  background-color: #b32b2b; 
-  padding: 15px;
-  color: rgb(255, 255, 255);
-  border: none;
-  width: 250px;  
-  font-size: 15px;
+	cursor: pointer;
+	background-color: #b32b2b;
+	padding: 15px;
+	color: rgb(255, 255, 255);
+	border: none;
+	width: 250px;
+	font-size: 15px;
 }
 .button_blue {
-  cursor: pointer;
-  background-color: #236f9b; 
-  padding: 15px;
-  color: rgb(255, 255, 255);
-  border: none;
-  width: 250px;  
-  font-size: 15px;
+	cursor: pointer;
+	background-color: #236f9b;
+	padding: 15px;
+	color: rgb(255, 255, 255);
+	border: none;
+	width: 250px;
+	font-size: 15px;
 }
 
-
 .button {
-  cursor: pointer;
-  background-color: #595959; 
-  padding: 15px;
-  color: whitesmoke;
-  border: none;
-  width: 250px;  
-  font-size: 15px;
-  margin: 10px;
-  
+	cursor: pointer;
+	background-color: #595959;
+	padding: 15px;
+	color: whitesmoke;
+	border: none;
+	width: 250px;
+	font-size: 15px;
+	margin: 10px;
 }
 
 .gallery {
-  width: 80px;
-  padding: 5px; 
-  
+	width: 80px;
+	padding: 5px;
 }
 
 .gallery_container {
-  display: block;
-  margin-left: 35px;
-  margin-top: -20px;
-  margin-bottom: 35px;
+	display: block;
+	margin-left: 35px;
+	margin-top: -20px;
+	margin-bottom: 35px;
 }
 
 .cart_items {
-  font-size: small;
-  padding: 5px; 
-  background-color: #595959;
-  color: whitesmoke;
-  border-radius: 200px;
-  
+	font-size: small;
+	padding: 5px;
+	background-color: #595959;
+	color: whitesmoke;
+	border-radius: 200px;
 }
 
 .outer_checkout_container {
-  display: flex;
-  
+	display: flex;
 }
 
 .checkout_container {
-  background: whitesmoke;
-  min-height: 100vh;
-  width: 60%;
-  text-align: center;
-  
+	background: whitesmoke;
+	min-height: 100vh;
+	width: 70%;
+	text-align: center;
 }
 
 .checkout_container1 {
-  padding: 30px;
-  background: white;
-  min-height: 100vh;
-  width: 40%;
-  
+	padding: 30px;
+	background: white;
+	min-height: 100vh;
+	width: 40%;
 }
 
 .checkout_img {
-  padding: 10px;
-  height: 100px;
-  width: 100px; 
-  object-fit: cover;
-  display: flex;
-  float: left;
+	padding: 10px;
+	height: 100px;
+	width: 100px;
+	object-fit: cover;
+	display: flex;
+	float: left;
 }
 
 .active {
-  color: black;
+	color: black;
 }
 
 .form_signin_checkout {
-  max-width: 500px;
-  padding: 80px;
-  margin: 0 auto;
-  
-  
+	max-width: 700px;
+	padding: 80px;
+	margin: 0 auto;
 }
 
 .name_and_surname {
-  display: flex;
-  margin: 0;
+	display: flex;
+	margin: 0;
 }
 
 .f_name {
-  
-  width: 500px; 
-  margin-left: -5px;
-  border: 1px solid #D9D9D9;
-  box-sizing: border-box;
-  border-radius: 3px;
+	width: 500px;
+	margin-left: -5px;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	border-radius: 3px;
 }
 
 .form_signin_checkout input {
-  margin: 7px;
-  
-  
+	margin: 7px;
 }
 .payment_logo {
-  display: flex;
-  text-align: center;
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  margin: 10px;
-  float: left;
-  
+	display: flex;
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	margin: 10px;
+	float: left;
 }
-
-
-
 
 .div_container {
-  padding: 50px;
-  display: inline-block;
-  cursor: pointer;
-  position:relative;  
-  
+	padding: 50px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
 }
 
-.div_container:nth-child(2n+1) {
-  offset-position:relative ;
-  margin-top: -100px;
+.div_container:nth-child(2n + 1) {
+	offset-position: relative;
+	margin-top: -100px;
 }
-
 
 .div_container_all {
-  margin-top: 100px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  margin: auto;
-  margin-top: 100px;
-  grid-gap:7px;
-  width: 65%;
-  
-  
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+	grid-gap: 7px;
+	margin-top: 100px;
+	width: 70%;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.outer_container_all {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
 .div_container_all h2 {
-  padding: 10px; 
+	padding: 10px;
 }
 
+.cart_image {
+	width: 70%;
+}
 
+.mini_cart_content {
+	display: inline-block;
+	background-color: #fefefe;
+	padding: 20px;
+	float: right;
+	margin-top: -3.5rem;
+	position: sticky;
+	z-index: 999;
+}
 
+@media screen and (max-width: 1250px) {
+	.mini_cart_content {
+		display: none !important;
+	}
+}
