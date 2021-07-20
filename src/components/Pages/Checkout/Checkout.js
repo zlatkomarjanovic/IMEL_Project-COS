@@ -1,10 +1,35 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Logo from "../../Logo/Logo";
 import { useCart } from "react-use-cart";
 import { Link } from "react-router-dom";
 
 const Checkout = () => {
 	const { cartTotal, totalUniqueItems, items, totalItems } = useCart();
+	const [email, setEmail] = useState("");
+	const [name, setName] = useState("");
+	const [surname, setSurname] = useState("");
+	const [company, setCompany] = useState("");
+	const [adress, setAdress] = useState("");
+	const [apartment, setApartment] = useState("");
+	const [postalCode, setPostalCode] = useState("");
+	const [city, setCity] = useState("");
+	const [country, setCountry] = useState("");
+	const [phone, setPhone] = useState("");
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(
+			email,
+			name,
+			company,
+			adress,
+			apartment,
+			postalCode,
+			city,
+			country,
+			phone
+		);
+	};
 
 	return (
 		<Fragment>
@@ -18,7 +43,7 @@ const Checkout = () => {
 						<i class='fa fa-angle-right'></i> Confirm
 					</p>
 					<div className='wrapper'>
-						<div className='form_signin_checkout'>
+						<form onSubmit={handleSubmit} className='form_signin_checkout'>
 							<h2 style={{ float: "left" }} className='form-signin-heading'>
 								Contact Information
 							</h2>
@@ -26,8 +51,12 @@ const Checkout = () => {
 								type='text'
 								name='email'
 								placeholder='Email Address'
+								value={email}
 								required=''
 								autofocus=''
+								onChange={(e) => {
+									setEmail(e.target.value);
+								}}
 							/>
 							<h2 style={{ float: "left" }} className='form-signin-heading'>
 								Shipping adress
@@ -41,6 +70,8 @@ const Checkout = () => {
 									placeholder='First Name'
 									required=''
 									autofocus=''
+									value={name}
+									onChange={(e) => setName(e.target.value)}
 								/>
 								<input
 									type='text'
@@ -49,6 +80,8 @@ const Checkout = () => {
 									placeholder='Last Name'
 									required=''
 									autofocus=''
+									value={surname}
+									onChange={(e) => setSurname(e.target.value)}
 								/>
 							</div>
 							<input
@@ -57,6 +90,8 @@ const Checkout = () => {
 								placeholder='Company (Optional)'
 								required=''
 								autofocus=''
+								value={company}
+								onChange={(e) => setCompany(e.target.value)}
 							/>
 							<input
 								type='text'
@@ -64,6 +99,8 @@ const Checkout = () => {
 								placeholder='Adress'
 								required=''
 								autofocus=''
+								value={adress}
+								onChange={(e) => setAdress(e.target.value)}
 							/>
 							<input
 								type='text'
@@ -71,6 +108,8 @@ const Checkout = () => {
 								placeholder='Apartment, Suite, etc.. (Optional)'
 								required=''
 								autofocus=''
+								value={apartment}
+								onChange={(e) => setApartment(e.target.value)}
 							/>
 							<div className='name_and_surname'>
 								<input
@@ -80,6 +119,8 @@ const Checkout = () => {
 									placeholder='Postal Code'
 									required=''
 									autofocus=''
+									value={postalCode}
+									onChange={(e) => setPostalCode(e.target.value)}
 								/>
 								<input
 									type='text'
@@ -88,6 +129,8 @@ const Checkout = () => {
 									placeholder='City'
 									required=''
 									autofocus=''
+									value={city}
+									onChange={(e) => setCity(e.target.value)}
 								/>
 							</div>
 							<input
@@ -96,6 +139,8 @@ const Checkout = () => {
 								placeholder='Country/Region'
 								required=''
 								autofocus=''
+								value={country}
+								onChange={(e) => setCountry(e.target.value)}
 							/>
 							<input
 								type='text'
@@ -103,17 +148,16 @@ const Checkout = () => {
 								placeholder='Phone (optional)'
 								required=''
 								autofocus=''
+								value={phone}
+								onChange={(e) => setPhone(e.target.value)}
 							/>
-							<Link to='/payment'>
-								<button
-									style={{ float: "right" }}
-									className='button'
-									type='submit'
-								>
-									Continue to Payment
-								</button>
-							</Link>
-						</div>
+							<input
+								style={{ float: "right" }}
+								className='button'
+								type='submit'
+								value='Continue to payment'
+							/>
+						</form>
 					</div>
 				</div>
 
